@@ -47,6 +47,9 @@ class ImgurImageViewModel {
      */
 
     func filterImageModelWithPoints() {
+        guard let _ = imgurGalleryModel, !imgurGalleryModel.isEmpty  else {
+            return
+        }
         //Filter results where the sum of “points”, “score” and “topic_id” adds up to an even number
         let filteredArrayModel = imgurGalleryModel.filter {($0.score + $0.points + $0.topicId) % 2 == 0}
         imgurGalleryModel = filteredArrayModel
