@@ -30,10 +30,12 @@ extension UIViewController {
             spinnerView.removeFromSuperview()
         }
     }
-    
-    func addAlert(title text: String, message: String ) {
+
+    func addAlert(title text: String, message: String, completion: (() -> ())? = nil) {
         let alert = UIAlertController(title: text, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-        self.present(alert, animated: true)
+        self.present(alert, animated: true, completion: completion)
     }
 }
+
+

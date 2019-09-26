@@ -76,5 +76,32 @@ class ViewControllerTests: XCTestCase {
 
         wait(for: [expectation], timeout: delay + 0.25)
     }
+    
+    func testHasSearchBar() {
+        XCTAssertNotNil(sut.searchBar)
+    }
 
+    func testSearchBarDelegate() {
+        XCTAssertNotNil(sut.searchBar.delegate)
+    }
+    
+    func testSearchButtonClick() {
+        sut.searchBar.text = "Car"
+        sut.searchBarSearchButtonClicked(sut.searchBar)
+        XCTAssertEqual(sut.searchBar.text, sut.searchKeyword)
+    }
+    
+    func testSearchButtonClickWithEmptyText() {
+        sut.searchBar.text = ""
+        sut.searchBarSearchButtonClicked(sut.searchBar)
+        XCTAssertEqual(sut.searchBar.text, "")
+        
+        UIApplication.shared.keyWindow?.rootViewController = sut
+        waitForExecution(name: "wait for alert view", delay: 1)
+        sut.addAlert(title: AlertMessages.emptySearchBarTitle, message: AlertMessages.noResultFoundMsg) {
+            XCTAssertEqual(self.sut.presentedViewController?.title, AlertMessages.emptySearchBarTitle)
+        }
+        waitForExecution(name: "wait for alert view", delay: 1)
+
+    }
 }

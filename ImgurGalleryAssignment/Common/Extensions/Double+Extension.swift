@@ -15,7 +15,7 @@ extension Double {
         let dateFormatter = DateFormatter()
         dateFormatter.timeZone = TimeZone(abbreviation: "GMT") //Set desired timezone
         dateFormatter.locale = NSLocale.current
-        dateFormatter.dateFormat = "dd-MM-yyyy h:mm a" //Specify date format
+        dateFormatter.dateFormat = DateFormat.dateFormat //Specify date format
         let strDate = dateFormatter.string(from: date)
         return strDate
 

@@ -29,6 +29,7 @@
 		A699C40D232B76B4000E4245 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A699C40B232B76B4000E4245 /* LaunchScreen.storyboard */; };
 		A699C41F232B7894000E4245 /* ImgurGalleryResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A699C41E232B7894000E4245 /* ImgurGalleryResponseModel.swift */; };
 		A699C421232B8B7D000E4245 /* ImgurImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A699C420232B8B7D000E4245 /* ImgurImageTableViewCell.swift */; };
+		A6B605CD233B73C000B2AEF9 /* CommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B605CC233B73C000B2AEF9 /* CommonTests.swift */; };
 		A6D00383232F647E000459CF /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D00382232F647E000459CF /* UITableViewCell+Extension.swift */; };
 		A6EF5992233A0E490017788F /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EF5991233A0E490017788F /* Double+Extension.swift */; };
 		A6F612F4233A1F07009FEF29 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F612F3233A1F07009FEF29 /* ViewControllerTests.swift */; };
@@ -72,6 +73,7 @@
 		A699C40C232B76B4000E4245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A699C41E232B7894000E4245 /* ImgurGalleryResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurGalleryResponseModel.swift; sourceTree = "<group>"; };
 		A699C420232B8B7D000E4245 /* ImgurImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurImageTableViewCell.swift; sourceTree = "<group>"; };
+		A6B605CC233B73C000B2AEF9 /* CommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTests.swift; sourceTree = "<group>"; };
 		A6D00382232F647E000459CF /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		A6EF5991233A0E490017788F /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		A6F612F3233A1F07009FEF29 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				A6487A97232E7E180061ABAF /* Info.plist */,
 				A6487A9F232E7F8B0061ABAF /* ImgurSearchImageAPITest.swift */,
 				A6F612F3233A1F07009FEF29 /* ViewControllerTests.swift */,
+				A6B605CC233B73C000B2AEF9 /* CommonTests.swift */,
 			);
 			path = ImgurTests;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6B605CD233B73C000B2AEF9 /* CommonTests.swift in Sources */,
 				A6F612F4233A1F07009FEF29 /* ViewControllerTests.swift in Sources */,
 				A6487A96232E7E180061ABAF /* ImgurTests.swift in Sources */,
 				A6487AA0232E7F8B0061ABAF /* ImgurSearchImageAPITest.swift in Sources */,
